@@ -1,4 +1,4 @@
-# Taks 4 MlOps 
+# Task 4 MlOps 
 
 ## Prof. Jorge Zaparta
 
