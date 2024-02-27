@@ -41,8 +41,12 @@ def procesarOpcion(opcion, usuario):
 
 # Iniciar acà funciòn de contador
 def contador():
-    print("Función de contador")
-    pass
+    numero_usuario = int(input("Por favor, ingresa un número entero: "))
+    if numero_usuario < 1:
+        print("Por favor, ingresa un número entero positivo.")
+        return
+    for i in range(1, numero_usuario + 1):
+        print(i)
 
 
 # Iniciar acà funciòn de calculadora
