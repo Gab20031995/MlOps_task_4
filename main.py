@@ -46,10 +46,39 @@ def contador():
 
 
 # Iniciar acà funciòn de calculadora
-def calculadora():
-    print("Función de calculadora")
-    pass
+def suma(a, b):
+    return a + b
+def resta(a, b):
+    return a - b
+def multiplicacion(a, b):
+    return a * b
+def division(a, b):
+    if b == 0:
+        return "Error: No se puede dividir entre 0"
+    else:
+        return a / b
 
+
+
+def calculadora():
+    num1 = float(input("Ingresa el primer número: "))
+    num2 = float(input("Ingresa el segundo número: "))
+    print("-----------------------------------------------")
+    operacion = input("Selecciona la operación (+, -, *, /): ")
+
+    if operacion == '+':
+        resultado = suma(num1, num2)
+    elif operacion == '-':
+        resultado = resta(num1, num2)
+    elif operacion == '*':
+        resultado = multiplicacion(num1, num2)
+    elif operacion == '/':
+        resultado = division(num1, num2)
+    else:
+        resultado = "Operación no válida"
+    print("-----------------------------------------------")
+    print("El resultado de la operación es:", resultado)
+    print("-----------------------------------------------")
 
 if __name__ == '__main__':
     main()
